@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Page</title>
+    <link rel="stylesheet" href="loading.css">
+</head>
+<body>
+    <!-- Video background -->
+    <div class="video-container">
+        <video autoplay muted playsinline id="loading-video">
+            <source src="QuickProfile Builder (8).mp4" type="video/mp4">
+            Your browser does not support HTML5 video. 
+        </video>
+    </div>
+
+    <!-- Loading text --> 
+
+    <div>
+        <h1 data-text="Loading...">Loading...</h1>
+    </div>
+    <script>
+    // Set a timeout of 5 seconds before redirecting to the homepage
+        setTimeout(function() {
+            window.location.href = "homepage.php"; // Change to homepage.php if necessary
+        }, 5000); // 5000 milliseconds = 5 seconds</script>
+</body>
+</html>

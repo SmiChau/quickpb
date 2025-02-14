@@ -1,0 +1,70 @@
+
+/* Parent container for template preview */
+.template-preview {
+    position: relative;
+    width: 1000px; /* Adjust as per your design */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+}
+
+/* Circle placeholder for profile photo */
+ .template-preview .profile-placeholder {
+    position: absolute;
+    top: 101px; /* Adjust to match your template */
+    right: 54.38%; /* Center horizontally */
+
+    transform: translateX(-50%);
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden; /* Ensure image fits inside */
+    background-color: #f0f0f0; /* Placeholder background */
+    border: 2px solid #ccc; /* Optional border */
+}
+
+/* Profile image inside the circle */
+ .template-preview .profile-placeholder img {
+    width: 100%; /* Fill the circle */
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Profile info (Name, Designation) */
+.template-preview .profile-info {
+    margin-top: 160px; /* Push down below the circle */
+    text-align: center;
+}
+
+.template-preview .profile-info h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #333;
+    margin-top: 1000px;
+}
+
+.template-preview .profile-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+
+.template-preview .personal-info h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.template-preview .personal-info h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.template-preview .contact-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.template-preview .social-links-template p {
+    font-size: 14px;
+    margin: 5px 0;
+}

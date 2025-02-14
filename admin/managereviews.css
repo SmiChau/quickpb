@@ -1,0 +1,142 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: #fff;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+}
+nav img {
+width: 90px;
+padding-left: 10px;
+}
+
+.container {
+display: flex;
+flex: 1;
+margin-top: 90px;
+height: calc(100vh - 70px); /* Subtract header height */
+margin-bottom: 20px;
+}
+/* Sidebar Styling */
+.sidebar {
+    padding-top: 140px;
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #34495e;
+}
+.sidebar ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.sidebar ul li {
+margin-bottom: 40px; /* Adds space between items */
+}
+
+.sidebar ul li a {
+text-decoration: none;
+color: white;
+display: block;
+padding: 15px 25px; /* Adjusts the clickable area */
+border-radius: 8px; /* Rounds the corners */
+transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.sidebar ul li a:hover {
+background-color: #7f8c8d; /* Changes background on hover */
+border-radius: 8px; /* Ensures hover effect matches the rounded shape */
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.review-box {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-header .username {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.review-header .timestamp {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.rating {
+    margin-bottom: 10px;
+}
+
+.star {
+    color: gold;
+    font-size: 1.2em;
+}
+
+.star.inactive {
+    color: #ddd;
+}
+
+.review-content {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.review-actions {
+    text-align: right;
+}
+
+.delete-btn {
+    text-decoration: none;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}

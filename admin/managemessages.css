@@ -1,0 +1,169 @@
+ /* General Reset */
+ body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: #fff;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+}
+nav img {
+width: 90px;
+padding-left: 10px;
+}
+
+.container {
+display: flex;
+flex: 1;
+margin-top: 90px;
+height: calc(100vh - 70px); /* Subtract header height */
+margin-bottom: 20px;
+}
+/* Sidebar Styling */
+.sidebar {
+    padding-top: 140px;
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #34495e;
+}
+.sidebar ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.sidebar ul li {
+margin-bottom: 40px; /* Adds space between items */
+}
+
+.sidebar ul li a {
+text-decoration: none;
+color: white;
+display: block;
+padding: 15px 25px; /* Adjusts the clickable area */
+border-radius: 8px; /* Rounds the corners */
+transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.sidebar ul li a:hover {
+background-color: #7f8c8d; /* Changes background on hover */
+border-radius: 8px; /* Ensures hover effect matches the rounded shape */
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+
+
+/* Heading */
+.main-content h1 {
+    text-align: left;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Message Box Styling */
+.message-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 750px;
+}
+
+.message-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Message Header */
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message-header .username {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.message-header .timestamp {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+/* Message Content */
+.message-content {
+    font-size: 1em;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+/* Message Actions */
+.message-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.approve-btn, .delete-btn {
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.approve-btn {
+    background-color: #45709b;
+    color: white;
+}
+
+.approve-btn:hover {
+    background-color: #34495e;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Approved Label */
+.approved {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+}

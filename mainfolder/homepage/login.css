@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        background:url(homey.jpg) center / cover no-repeat;
+         
+}
+.wrapper{
+    width: 420px;
+    background: transparent;
+    padding: 1.5rem;
+    margin: 50px auto;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 50px #9393c7;
+    color: #fff;
+    border-radius: 20px;
+}
+.wrapper:hover{
+    animation: animate 1s linear infinite;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    color: #4a494a;
+}
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-box{
+    position: relative;
+    margin: 50px 0;
+    border-bottom: 2px solid #fff;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #4a494a;
+    pointer-events: none;
+    transition: -3px;
+}
+.input-box input{
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    color: #323a4a;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box i{
+    position: absolute;
+    right: 3px;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #4a494a;
+}
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.remember-forgot label{
+    accent-color: #fff;
+    margin-right: 3px;
+    color: #4a494a;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #414141;
+    font-weight: 600;
+}
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+    color: #414141;
+}
+button{
+    color: #414141;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+}
+button:hover {
+    text-decoration: underline;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+.error {
+    border: 1px solid red;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="templates.css">
+</head>
+<body>
+    <!-- Template 1 blue modern -->
+    <div class="cv-template template-blue">
+        <header>
+            <div class="photo-and-info">
+                <img src="default-photo.png" alt="Profile Photo" class="profile-photo">
+                <div>
+                    <h1>{{name}}</h1>
+                    <h3>{{designation}}</h3>
+                </div>
+            </div>
+        </header>
+        <section>
+            <h2>Contact Information</h2>
+            <p>Email: {{email}}</p>
+            <p>Phone: {{phone}}</p>
+            <p>Location: {{address}}, {{city}}</p>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <p>{{education}}</p>
+        </section>
+    </div>
+    <!-- Template 2 elegant purple -->
+    
+    <div class="cv-template template-purple">
+        <header>
+            <div class="photo-and-info">
+                <img src="default-photo.png" alt="Profile Photo" class="profile-photo">
+                <div>
+                    <h1>{{name}}</h1>
+                    <h4>{{designation}}</h4>
+                </div>
+            </div>
+        </header>
+        <section>
+            <h2>About Me</h2>
+            <p>{{summary}}</p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>{{skill1}}</li>
+                <li>{{skill2}}</li>
+                <li>{{skill3}}</li>
+            </ul>
+        </section>
+    </div>
+        <!-- Template-3 Green Minimal -->
+        <div class="cv-template template-green">
+            <header>
+                <h1>{{name}}</h1>
+                <h2>{{designation}}</h2>
+            </header>
+            <section>
+                <h2>Experience</h2>
+                <p>{{experience}}</p>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <p>{{education}}</p>
+            </section>
+        </div>
+        <!-- Template-4 Bold Red -->
+        <div class="cv-template template-red">
+            <header>
+                <div class="photo-and-info">
+                    <img src="default-photo.png" alt="Profile Photo" class="profile-photo">
+                    <div>
+                        <h1>{{name}}</h1>
+                        <h3>{{designation}}</h3>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <h2>Achievements</h2>
+                <ul>
+                    <li>{{achievement1}}</li>
+                    <li>{{achievement2}}</li>
+                </ul>
+            </section>
+            <section>
+                <h2>References</h2>
+                <p>{{references}}</p>
+            </section>
+        </div>
+        <!-- Template-5 professional Grey -->
+        <div class="cv-template template-grey">
+            <header>
+                <h1>{{name}}</h1>
+                <h3>{{designation}}</h3>
+            </header>
+            <section>
+                <h2>Contact</h2>
+                <p>Email: {{email}}</p>
+                <p>Phone: {{phone}}</p>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>{{skill1}}</li>
+                    <li>{{skill2}}</li>
+                </ul>
+            </section>
+        </div>
+        
+        
+        
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+   justify-content: center;
+   align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background:url(homey.jpg) center / cover no-repeat;
+         
+}
+
+nav img {
+    margin-top: 5px;
+    width: 150px;
+    padding-left: 20px;
+}
+.subline{ 
+    display: flex;
+    color:#846e28 ;
+    padding-left:2%;
+    font-style:italic;
+    text-align:center;
+    font-size: 45px;
+    position: absolute;
+    top: 10px; /* Adjust based on the template layout */
+    left: 280px;
+} 
+
+
+header {
+    position: fixed; /* Fixes the header to the top */
+    top: 0; /* Aligns it to the top */
+    left: 0;
+    width: 100%; /* Ensures it spans the entire width of the viewport */
+    z-index: 1000; /* Keeps it above other elements */
+    background: #d59090; /* Solid background for visibility */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+header .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 36px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+h1{    
+    font-size: 75px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+    
+    
+    margin-top: 40px;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    
+}
+button{
+    position: relative;
+    display: block;
+   height: 80px;
+   width: 260px;
+   margin: 0 45px;
+   border-radius: 50px;
+   border: none;
+   outline: none;
+   background: #6e344d;
+   color: #fff;
+   font-size: 22px;
+   font-weight: 700;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   cursor: pointer;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
+   overflow: hidden;
+   z-index: 1;
+}
+button :hover{
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .7);
+}
+.create:after,.use:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+   transition: all 0.5s ease-in-out;
+      
+}
+.create:after{
+    background: #ad9b49;
+    transform: translate(-98%,-25%) rotate(45deg);
+}
+.use:after{
+    background: #A8CD89;
+    transform: translate(-9%,-25%) rotate(45deg);
+}
+.create:hover:after{
+    transform: translate(-9%,-25%) rotate(45deg);
+}
+.use:hover:after{
+    transform: translate(-98%,-22%) rotate(45deg);
+}
+button span{
+    position: relative;
+    z-index: 1; 
+}
+a{
+    text-decoration: none;
+}

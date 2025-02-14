@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template1</title>
+    <link rel="stylesheet" href="template1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="resume-container">
+        <div class="left-column">
+            <div class="photo">
+                <img src="photo.jpg" alt="Profile Photo" id="profile-photo">
+             </div>
+            <input type="file" id="photoUpload" accept="image/*" class="hide">
+           <label for="photoUpload" id="photoUploadlabel">Upload Photo</label>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p contenteditable="true" id="phone"><i class="fa fa-phone-alt"></i> 9808000000</p>
+                <p contenteditable="true" id="email"><i class="fa fa-envelope"></i> hello@gmail.com</p>
+                <p contenteditable="true" id="address"><i class="fa fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+            </div>
+            
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul id="skillsList" contenteditable="true">
+                    <li>Project Management</li>
+                    <li>Web Development</li>
+                    <li>Time Management</li>
+                    <li>Leadership</li>
+                </ul>
+            </div>
+            <div class="Language">
+                <h3>Language</h3>
+                <ul id="languageList" contenteditable="true">
+                    <li>English(Fluent)</li>
+                    <li>Nepali(Fulent)</li>
+                    <li>Newari(Fluent)</li>
+                    <li>French</li>
+                </ul>
+            </div>
+            <div class="Reference">
+                <h3>Reference</h3>
+                <p contenteditable="true" id="rname"><b>Ava Maharjan</b></p>
+                <p contenteditable="true" id="rpost">abc,CEO</p>
+                <p contenteditable="true" id="rphone"><b>Phone: </b>9810080000</p>
+                <p contenteditable="true" id="remail"><b>Email: </b>ava@gmail.com</p>   
+                </ul>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="header">
+                <h1 contenteditable="true" id="name">Richard Shrestha</h1>
+                <p contenteditable="true" id="jobTitle">Web Developer</p>
+            </div>
+            <div class="profile">
+                <h3><i class="fa fa-user" ></i>Profile</h3>
+                <p contenteditable="true" id="profileDesc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam, alias ex ut deserunt nulla asperiores corrupti iusto laborum totam omnis reiciendis sint cumque voluptate veniam nostrum consectetur molestias suscipit.
+                </p>
+            </div>
+            <div class="experience">
+                <h3><i class="fa fa-briefcase"></i> Work Experience</h3>
+                <ul id="experienceList" contenteditable="true">
+                    <li><b>Borcelle Studio</b> - Juinor Frontend Developer (2030-Present)</li>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aperiam quo, nihil velit culpa officiis id, laborum, veniam pariatur veritatis aspernatur repellendus minus et voluptatibus distinctio ea amet nobis ab.</p>
+                    <li><b>Fauget Studio</b> - Webpage Designer (2025-2029)</li>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat cum magnam beatae architecto, sapiente illo accusamus quidem provident tempora culpa sunt eligendi, laboriosam deserunt mollitia eveniet molestiae cumque atque voluptatem!</p>
+                </ul>
+            </div>
+            <div class="education">
+                <h3><i class="fas fa-graduation-cap"></i>Education</h3>
+                <ul id="educationList" contenteditable="true">
+                    <li>Master of Business Management, 2029-2031</li>
+                    <p>School of IT.</p>
+                    <p>GPA: 3.45</p>
+                    <li>Bachelor of Business Management, 2025-2029</li>
+                    <P>ACEM</P>
+                    <p>GPA: 3.8</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+         <a href="#" id="download" class="button">Download CV
+             <!-- <span class="overlay"></span> -->
+            </a>
+         
+      </div>
+    <script src="template3.js"></script>
+    <script src="download.js"></script>
+</body>
+</html>
+

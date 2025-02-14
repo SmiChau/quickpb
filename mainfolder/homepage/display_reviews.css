@@ -1,0 +1,108 @@
+/* Container for all reviews */
+.review-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between review cards */
+    max-width: 800px;
+    margin: 20px auto; /* Center container on the page */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Each review card */
+.review-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Review header with username and stars */
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Username styling */
+.review-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Star rating container */
+.star-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Spacing between stars */
+}
+
+/* Stars styling */
+.star-container span {
+    font-size: 1.5em;
+    color: lightgray;
+}
+
+.star-container .selected {
+    color: gold; /* Highlight selected stars in gold */
+}
+
+/* Review body styling */
+.review-body {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Review photo styling */
+.review-body img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Edit and delete buttons */
+.edit-delete {
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+.edit-delete a {
+    text-decoration: none;
+    color: #007BFF;
+    margin: 0 5px;
+}
+
+.edit-delete a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .review-container {
+        padding: 10px;
+    }
+
+    .review-card {
+        padding: 15px;
+    }
+
+    .review-header h3 {
+        font-size: 1em;
+    }
+
+    .star-container span {
+        font-size: 1.2em;
+    }
+}

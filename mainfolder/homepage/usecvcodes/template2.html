@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 2</title>
+    <link rel="stylesheet" href="template2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="left-column">
+            <div class="photo">
+                <img src="photo.jpg" alt="Profile Photo" id="profile-photo">
+            </div>
+            <input type="file" id="photoUpload" accept="image/*" class="hide">
+            <label for="photoUpload" id="photoUploadlabel">Upload Photo</label>
+        <div class="header">
+            <h1 contenteditable="true" id="name">Shrea Maharjan</h1>
+            <p contenteditable="true" id="jobTitle">Web Developer</p>
+        </div>
+        <div class="contact">
+            <h3 class="head">CONTACT</h3>
+            <p contenteditable="true" id="phone"><i class="fa fa-phone-alt"></i> 9808000000</p>
+            <p contenteditable="true" id="email"><i class="fa fa-envelope"></i> hello@gmail.com</p>
+            <p contenteditable="true" id="address"><i class="fa fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+        </div>
+        
+        <div class="education">
+            <h3 class="head">EDUCATION</h3>
+                <div class="course" contenteditable="true">
+                    <h2 class="education-title">Course Studied</h2>
+                    <h5 class="collage-name">University/College Details</h5>
+                    <p class="education-date">2006-2008</p>
+                </div>
+                <div class="course" contenteditable="true">
+                    <h2 class="education-title">Course Studied</h2>
+                    <h5 class="collage-name">University/College Details</h5>
+                    <p class="education-date">2006-2008</p>
+                </div>
+        </div>
+        
+        <div class="skills">
+            <h3 class="head">SKILLS</h3>
+            <ul id="skillsList" contenteditable="true">
+                <li>Project Management</li>
+                <li>Web Development</li>
+                <li>Time Management</li>
+                <li>Leadership</li>
+                <li>Negotiation</li>
+                <li>Digital Marketing</li>
+            </ul>
+        </div>
+        <div class="language">
+            <h3 class="head">LANGUAGE</h3>
+            <ul id="languageList" contenteditable="true">
+                <li>English</li>
+                <li>Spanish</li>
+                <li>French</li>
+            </ul>
+        </div>
+        </div>
+   
+        
+        <div class="right-column">
+            <div class="profile">
+                <h3 class="head">PROFILE</h3>
+                <p contenteditable="true">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem porro enim velit nemo ducimus temporibus animi eum beatae aliquid! Reprehenderit veniam et dicta molestias animi nostrum, voluptatum iure vero facilis.</p>
+
+            </div>
+            <div class="Work">
+                <h3 class="head">WORK EXPERIENCE</h3>
+                <h4 contenteditable="true">Ginyard International Co.</h4>
+                <p contenteditable="true">Product Design Manager</p>
+                <ul id="we1" contenteditable="true">
+                    <li>Working with the wider development team.</li>
+                    <li>Manage website design, content, and SEO Marketing, Branding and Logo Design</li>
+                </ul>
+                <h4 contenteditable="true">Arowwai Industries</h4>
+                <p contenteditable="true">Product Design Manager</p>
+                <ul id="we2" contenteditable="true">
+                    <li>Working with the wider development team.</li>
+                    <li>Manage website design, content, and SEO Marketing, Branding and Logo Design</li>
+                </ul>
+                <h4 contenteditable="true">Aro Industries Co.</h4>
+                <p contenteditable="true">Product Design Manager</p>
+                <ul id="we3" contenteditable="true">
+                    <li>Working with the wider development team.</li>
+                    <li>Manage website design, content, and SEO Marketing, Branding and Logo Design</li>
+                </ul>
+            </div>
+            <div class="Reference">
+                <h3 class="head">REFERENCES</h3>
+                <P contenteditable="true" id="rn"><b>Bailey Dupont</b></P>
+                <p contenteditable="true" id="rp">QEDGYH, CEO</p>
+                <p contenteditable="true" id="rphone"><b>Phone: </b>9810080000</p>
+                <p contenteditable="true" id="re"><b>Email: </b>bib@gmail.com</p>   
+                
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <a href="#" id="download" class="button">Download CV
+            <!-- <span class="overlay"></span> -->
+           </a>
+       
+     </div>
+    <script src="template3.js"></script>
+    <script src="download.js"></script>
+</body>
+</html>

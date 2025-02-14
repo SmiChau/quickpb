@@ -1,0 +1,114 @@
+body {
+    font-family: "Funnel Display", serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2f48; 
+    color: #fff; 
+    height: 100%;
+    width: 100%;
+    
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+html, body {
+    width: 100%; /* Ensure the body and HTML occupy the full width */
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #3E4071;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+    /* Flexbox for layout */
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Spread items across the header */
+    padding: 0 20px; /* Add padding on the sides */
+}
+
+nav img {
+    margin-top: 5px;
+    width: 90px;
+    padding-left: 10px;
+}
+
+header h1 {
+    margin: 0; /* Remove any default margin */
+    font-size: 24px; /* Adjust as needed */
+    text-align: center;
+    flex: 1; /* Allow the h1 to take up remaining space */
+    display: flex;
+    justify-content: center; /* Center text within the h1 container */
+}
+
+
+.template-container {
+    display:grid;
+    grid-template-columns: repeat(5, 1fr); /* Five equal columns */
+    gap: 30px; /* Space between grid items */
+    padding: 40px; /* Space inside the container */
+    justify-items: center; /* Center items horizontally */
+    margin-top: 80px; /* Space below the header */
+    min-height: calc(100vh - 80px); /* Ensure it doesn't shrink below viewport height */
+    box-sizing: border-box; /* Include padding in height/width */
+    overflow-x: auto;
+}
+
+.template-card {
+    background: #e8eaf6; 
+    border: none;
+    border-radius: 12px; 
+    padding: 20px;
+    text-align: center;
+    width: 340px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.template-card:hover {
+    transform: translateY(-15px); 
+    box-shadow: 0 8px 15px rgba(14, 13, 13, 0.2); 
+}
+
+.template-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    margin-bottom: 15px;
+}
+
+.template-card h2 {
+    margin: 10px 0;
+    font-size: 26px;
+    color: #2c2f48; 
+}
+
+.template-card p {
+    font-size: 17px;
+    color: #5c5f7f; 
+    margin-bottom: 17px;
+}
+
+.template-card button {
+    background-color: #bc5ee1; 
+    color: #fff;
+    border: none;
+    padding: 14px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; 
+}
+
+.template-card button:hover {
+    background-color: #934468; 
+}

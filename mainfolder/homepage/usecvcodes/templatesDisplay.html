@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Templates</title>
+</head>
+<body>
+
+    Name:
+    <input type="text" oninput="copyContent()" id="typedFname">
+
+    <iframe src="template2.html" width="55%" height="900px" style="border:1px solid black;">
+        Your browser does not support iframes.
+    </iframe>
+    
+    
+    <div class="fname" id="fname">
+
+    </div>
+
+    <script>
+
+
+        function copyContent(){
+            const source = document.getElementById("typedFname").value;
+            const dest = document.getElementById("fname");
+
+            dest.innerHTML = source;
+
+        }
+
+    </script>
+
+</body>
+</html>
