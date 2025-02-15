@@ -6,7 +6,7 @@
     border-radius: 10px;
     overflow: visible; /* Ensure content isn't clipped */
     padding: 20px;
-    background-color: #f9f9f9; /* Template background */
+    
     z-index: 10; /* Make sure it's on top of background */
 }
 
@@ -214,6 +214,114 @@
     word-wrap: break-word; /* Break text into multiple lines */
     text-align: justify;
 }
+#template-preview.template1 #contactDisplay{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 350px;
+    left: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+#template-preview.template1 #icon1{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 392px;
+    left: 50px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+#template-preview.template1 #phone-preview {
+    position: absolute;
+    margin-top: 10px;
+    top: 390px;
+    left: 78px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#template-preview.template1 #icon2{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 418px;
+    left: 50px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+#template-preview.template1 #email-preview{
+    position: absolute;
+    margin-top: 10px;
+    top: 415px;
+    left: 78px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#template-preview.template1 #icon3{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 443px;
+    left: 50px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+#template-preview.template1 #address-preview{
+    position: absolute;
+    margin-top: 10px;
+    top: 440px;
+    left: 78px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 /* Education section */
 #template-preview.template1 #education-header{
@@ -379,6 +487,170 @@
     word-wrap: break-word;
     text-align: justify;
 }
+/* language section */
+/* Sidebarthree - Languages Section */
+#template-preview.template1 #languages-header {
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 790px;
+    left: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/* Sidebar Three - Languages Preview Section */
+#template-preview.template1 #languages-list {
+    margin-top: 10px;
+}
+
+/* Individual Language Entry in Preview */
+#template-preview.template1 .language-entry-preview {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+/* Language Name Styling */
+#template-preview.template1 .language-name-preview {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 48%; /* Adjust to fit alongside level */
+    text-align: left;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+    margin-right: 10px; /* Add a smaller space between name and level selector */
+    flex: 1; /* Adjust to fit content dynamically */
+ 
+    
+}
+
+/* Language Level Styling */
+#template-preview.template1 .language-level-preview {
+    padding: 10px;
+    font-size: 13px;
+    color: #3498db; /* Blue color for levels */
+    font-style: italic;
+    text-align: right;
+    width: 48%; /* Adjust to fit alongside name */
+    display: flex;
+    border: #666;
+    justify-content: flex-end;
+    gap: 4px;
+    display: flex; /* Align level dots in a row */
+     /* Decrease the gap between individual level dots */
+    flex: 2.3; /* Adjust to fit content dynamically */
+    justify-content: flex-start; /* Align level selector closer to the language name */
+}
+
+/* Positioning for the First Language Preview */
+#template-preview.template1 .language-entry-preview:nth-child(1) {
+    top: 820px;
+    left: 42px; /* Adjusted position */
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 360px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Adjusted Positions for Subsequent Languages */
+#template-preview.template1 .language-entry-preview:nth-child(2) {
+    top: 845px;
+    left: 42px; /* Adjusted position */
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 360px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#template-preview.template1 .language-entry-preview:nth-child(3) {
+    top: 870px;
+    left: 42px; /* Adjusted position */
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 360px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#template-preview.template1 .language-entry-preview:nth-child(4) {
+    top: 895px;
+    left: 42px; /* Adjusted position */
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 360px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#template-preview.template1 .language-entry-preview:nth-child(5) {
+    top: 900px;
+    left: 42px; /* Adjusted position */
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 360px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Level Indicator Styling for Selected Levels */
+#template-preview.template1 .language-level-preview .level {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Highlight Selected Levels */
+#template-preview.template1 .language-level-preview .level.selected {
+    background-color: #9a839f;
+    border-color: #2980b9;
+}
+
 /* experience section */
 #template-preview.template1 #experience-header{
     position: absolute;
@@ -735,167 +1007,6 @@
 }
 
 
-/* language section */
-/* Sidebarthree - Languages Section */
-#template-preview.template1 #languages-header {
-    position: absolute;
-    display: none;
-    margin-top: 10px;
-    top: 790px;
-    left: 50px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
-    line-height: 1.5;
-    width: 260px;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-}
-/* Sidebar Three - Languages Preview Section */
-#template-preview.template1 #languages-list {
-    margin-top: 10px;
-}
-
-/* Individual Language Entry in Preview */
-#template-preview.template1 .language-entry-preview {
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    margin-bottom: 10px;
-}
-
-/* Language Name Styling */
-#template-preview.template1 .language-name-preview {
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    width: 48%; /* Adjust to fit alongside level */
-    text-align: left;
-    color: #555;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;  
-    margin-right: 10px; /* Add a smaller space between name and level selector */
-    flex: 1; /* Adjust to fit content dynamically */
- 
-    
-}
-
-/* Language Level Styling */
-#template-preview.template1 .language-level-preview {
-    padding: 10px;
-    font-size: 13px;
-    color: #3498db; /* Blue color for levels */
-    font-style: italic;
-    text-align: right;
-    width: 48%; /* Adjust to fit alongside name */
-    display: flex;
-    border: #666;
-    justify-content: flex-end;
-    gap: 4px;
-    display: flex; /* Align level dots in a row */
-     /* Decrease the gap between individual level dots */
-    flex: 2.3; /* Adjust to fit content dynamically */
-    justify-content: flex-start; /* Align level selector closer to the language name */
-}
-
-/* Positioning for the First Language Preview */
-#template-preview.template1 .language-entry-preview:nth-child(1) {
-    top: 820px;
-    left: 42px; /* Adjusted position */
-    position: absolute;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
-    width: 360px;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* Adjusted Positions for Subsequent Languages */
-#template-preview.template1 .language-entry-preview:nth-child(2) {
-    top: 845px;
-    left: 42px; /* Adjusted position */
-    position: absolute;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
-    width: 360px;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-#template-preview.template1 .language-entry-preview:nth-child(3) {
-    top: 870px;
-    left: 42px; /* Adjusted position */
-    position: absolute;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
-    width: 360px;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-#template-preview.template1 .language-entry-preview:nth-child(4) {
-    top: 895px;
-    left: 42px; /* Adjusted position */
-    position: absolute;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
-    width: 360px;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-#template-preview.template1 .language-entry-preview:nth-child(5) {
-    top: 900px;
-    left: 42px; /* Adjusted position */
-    position: absolute;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
-    width: 360px;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* Level Indicator Styling for Selected Levels */
-#template-preview.template1 .language-level-preview .level {
-    width: 17px;
-    height: 17px;
-    border-radius: 50%;
-    border: 1px solid #ddd;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-/* Highlight Selected Levels */
-#template-preview.template1 .language-level-preview .level.selected {
-    background-color: #9a839f;
-    border-color: #2980b9;
-}
 /* Reference-section */
 #template-preview.template1 #references-header {
     position: absolute;

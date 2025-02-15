@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="display_reviews.css">
 </head>
 <body>
-    
 <?php
 include 'connect.php';
 
 // Check if the user is logged in
+
 $current_user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : null;
 
-// Fetch all reviews
+// Fetch all reviews, prioritizing the logged-in user's review
 $query = "SELECT r.*, u.username FROM reviews r 
           JOIN users u ON r.user_id = u.id
-          ORDER BY r.created_at DESC";
+          ORDER BY 
+              CASE 
+                  WHEN r.user_id = $current_user_id THEN 1 
+                  ELSE 2 
+              END, 
+              r.created_at DESC";
 $result = $conn->query($query);
 
 while ($row = $result->fetch_assoc()) {
@@ -55,4 +60,3 @@ while ($row = $result->fetch_assoc()) {
 ?>
 </body>
 </html>
-<?php

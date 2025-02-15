@@ -37,73 +37,87 @@ $totalTemplates = $templateData['total_templates'];
     <style>
         /* General Reset */
         body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background: #f4f7f9;
-        }
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: #fff;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+}
+nav img {
+width: 90px;
+padding-left: 10px;
+}
 
-        /* Header */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-        nav img {
-            width: 90px;
-            padding-left: 20px;
-        }
+.container {
+display: flex;
+flex: 1;
+margin-top: 90px;
+height: calc(100vh - 70px); /* Subtract header height */
+margin-bottom: 20px;
+}
+/* Sidebar Styling */
+.sidebar {
+    padding-top: 140px;
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-        /* Container */
-        .container {
-            display: flex;
-            margin-top: 90px;
-            height: calc(100vh - 90px);
-        }
+.sidebar .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #34495e;
+}
+.sidebar ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
 
-        /* Sidebar */
-        .sidebar {
-            width: 250px;
-            background: #2c3e50;
-            color: white;
-            padding-top: 20px;
-            position: fixed;
-            height: 100%;
-        }
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .sidebar ul li {
-            margin-bottom: 20px;
-        }
-        .sidebar ul li a {
-            text-decoration: none;
-            color: white;
-            display: block;
-            padding: 15px 25px;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-        }
-        .sidebar ul li a:hover {
-            background-color: #34495e;
-        }
+.sidebar ul li {
+margin-bottom: 40px; /* Adds space between items */
+}
 
-        /* Main Content */
-        .main-content {
-            margin-left: 250px;
-            padding: 20px;
-            flex: 1;
-        }
-        .main-content h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
+.sidebar ul li a {
+text-decoration: none;
+color: white;
+display: block;
+padding: 15px 25px; /* Adjusts the clickable area */
+border-radius: 8px; /* Rounds the corners */
+transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.sidebar ul li a:hover {
+background-color: #7f8c8d; /* Changes background on hover */
+border-radius: 8px; /* Ensures hover effect matches the rounded shape */
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
 
         /* Cards */
         .card-container {

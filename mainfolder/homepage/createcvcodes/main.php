@@ -78,65 +78,56 @@ $first_template = $result->fetch_assoc();
 </section>
             
  <!-- About Section -->
- <section id="about-section">
-    <h3>About Yourself</h3>
-
-    <form>
-        <!-- Profile Photo -->
-        <div class="profile-photo">
-            <img src="default-profile.png" alt="Profile Photo" id="profile-img">
-            <div class="photo-actions">
-                <input type="file" id="file-input" accept="image/*" style="display: none;">
-                <button type="button" id="upload-btn">Update Photo</button>
-                <button type="button" id="delete-btn">Delete</button>
-            </div>
-        </div>
-
-        <!-- Primary Info -->
-         <div id="full-name">
-        <div class="form-group">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" placeholder="Enter first name">
-        </div>
-    
-        <div class="form-group">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" placeholder="Enter last name">
+  <section id="about-section">
+ <form action="save_about.php" method="POST" enctype="multipart/form-data" id="save-form">
+    <!-- Profile Photo -->
+    <div class="profile-photo">
+        <img src="default-profile.png" alt="Profile Photo" id="profile-img">
+        <div class="photo-actions">
+            <input type="file" id="file-input" name="profile_photo" accept="image/*" style="display: none;">
+            <button type="button" id="upload-btn">Update Photo</button>
+            <button type="button" id="delete-btn">Delete</button>
         </div>
     </div>
-        <div class="form-group">
-            <label for="designation">Designation</label>
-            <input type="text" id="designation" placeholder="Enter designation">
-        </div>
-        
-       
-        <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" placeholder="Enter phone number"  oninput="displayC()">
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter email" oninput="displayicon2()">
-        </div>
-        <div class="form-group">
-            <label for="address">Address</label>
-            <input type="text" id="address" placeholder="Enter address" oninput="displayicon3()">
-        </div>
-        <div class="form-group">
-            <label for="city">City</label>
-            <input type="text" id="city" placeholder="Enter city">
-        </div>
-        <div class="form-group">
-            <label for="summary">Summary</label>
-            <textarea id="summary" placeholder="How would you describe yourself?" oninput="displayaboutme()"></textarea>
-        </div>
 
-    
-
-    </form>
+    <!-- Primary Info -->
+    <div id="full-name">
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" placeholder="Enter first name">
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" placeholder="Enter last name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="designation">Designation</label>
+        <input type="text" id="designation" name="designation" placeholder="Enter designation">
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number" oninput="displayC()">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter email"  oninput="displayicon2()">
+    </div>
+    <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" placeholder="Enter address"  oninput="displayicon3()">
+    </div>
+    <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" placeholder="Enter city">
+    </div>
+    <div class="form-group">
+        <label for="summary">Summary</label>
+        <textarea id="summary" name="summary" placeholder="How would you describe yourself?" oninput="displayaboutme()" rows="5"></textarea>
+    </div>
+    <button type="submit" id="save-btn">Save</button>
+</form>
 </section>
-
-       
         <!-- education-section -->
         <section id="education-section">
             <h3>Education</h3>
@@ -351,22 +342,27 @@ $first_template = $result->fetch_assoc();
         <div id="template-content">
             <!-- About section -->
             <!-- Dynamic Placeholders for -->
-            <img id="photo-preview" class="template-data" src="default-profile.png" alt="">
-            <div id="name-preview" class="template-data"></div>
-            <div id="lastname-preview" class="template-data"></div>
-            <div id="fullname-preview" class="template-data"></div>
-            <label for="About me" id="aboutme">About Me</label>
-            <div id="designation-preview" class="template-data"></div>
-            <label for="contacts" id="contactDisplay">Contact</label>
-            
-            <div id="icon1"><i class="fa-solid fa-phone"></i></div>
-            <div id="phone-preview" class="template-data"></div>
-            <div id="icon2"><i class="fa-solid fa-envelope"></i></div>
-            </i><div id="email-preview" class="template-data"></div>
-            <div id="icon3"><i class="fa-solid fa-location-dot"></i></div>
-            <div id="address-preview" class="template-data" ></div>
-            
-            <div id="summary-preview" class="template-data"></div>
+            <!-- About section -->
+<img id="photo-preview" class="template-data" src="default-profile.png" alt="">
+<div id="name-preview" class="template-data"></div>
+<div id="lastname-preview" class="template-data"></div>
+<div id="fullname-preview" class="template-data"></div>
+
+<div id="designation-preview" class="template-data"></div>
+
+<!-- Contact Section -->
+<label for="contacts" id="contactDisplay">Contact</label>
+<div id="icon1"><i class="fa-solid fa-phone"></i></div>
+<div id="phone-preview" class="template-data"></div>
+<div id="icon2"><i class="fa-solid fa-envelope"></i></div>
+<div id="email-preview" class="template-data"></div>
+<div id="icon3"><i class="fa-solid fa-location-dot"></i></div>
+<div id="address-preview" class="template-data"></div>
+
+
+<!-- Summary Section -->
+<label for="About me" id="aboutme">About Me</label>
+<div id="summary-preview" class="template-data"></div>
             <!-- education section -->
             <!-- Dynamic Placeholders -->
     <label id="education-header">Education</label>
@@ -504,6 +500,8 @@ $first_template = $result->fetch_assoc();
 
     <script src="main.js"></script>
     <script src="mainabout.js"></script>
+    <script src="save_about.js"></script>
+    <script src="fetch_about.js"></script>
     <script src="maineducation.js"></script>
     <script src="mainexperience.js"></script>
    

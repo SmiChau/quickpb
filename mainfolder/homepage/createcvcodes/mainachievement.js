@@ -1,3 +1,4 @@
+//Achievement section
 document.addEventListener('DOMContentLoaded', () => {
     // Selectors for inputs and preview containers
     const achievementTitleInput = document.getElementById('achievement-title');
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add new achievement
     addAchievementBtn.addEventListener('click', () => {
         const newEntry = document.createElement('div');
-        newEntry.classList.add('achievement-entry');
+        newEntry.classList.add('achievement-row');
 
         newEntry.innerHTML = `
             <label>Title</label>
@@ -38,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
         newPreview.classList.add('achievement-entry-preview');
 
         newPreview.innerHTML = `
-            <div class="achievement-title-preview"></div>
-            <div class="achievement-description-preview"></div>
+            <div class="achievement-title-preview achievement-field"></div>
+            <div class="achievement-description-preview achievement-field"></div>
         `;
 
         achievementsList.appendChild(newPreview);
