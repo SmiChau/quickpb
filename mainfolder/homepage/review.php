@@ -1,6 +1,10 @@
 <?php 
 session_start();
-include 'connect.php';
+include('connect.php'); // Include database connection
+
+if(!isset($_SESSION['loggedin'])){
+    header("Location: http://localhost/quickpb/mainfolder/homepage/login.php");
+}
 
 // Error or success messages
 $error_message = $success_message = '';
@@ -46,6 +50,7 @@ if (isset($_SESSION['user_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rating and Review System</title>
+    <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="review.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -123,14 +128,24 @@ if (isset($_SESSION['user_id'])) {
                 <li class="nav-item"><a href="homepage.php#about" class="nav-link">ABOUT</a></li>
                 <li class="nav-item"><a href="homepage.php#services" class="nav-link">SERVICES</a></li>
                 <li class="nav-item"><a href="homepage.php#contact" class="nav-link">CONTACT</a></li>
-                <li class="nav-item"><a href="homepage.php#login-header" class="nav-link">LOGIN/SIGNUP</a></li>
-                <li class="nav-item"><a href="review.php" class="nav-links">RATINGS & REVIEWS</a></li>
-                <li class="nav-item"><a href="logout.php" class="nav-links">LOGOUT</a></li>
+                <li class="nav-item" id="login"><a href="homepage.php#login-header" class="nav-link">LOGIN/SIGNUP</a></li>
+                <li class="nav-item"><a href="review.php" class="nav-link">RATINGS & REVIEWS</a></li>
+                <li class="nav-item" id="logout"><a href="logout.php" class="nav-link">LOGOUT</a></li>
             </ul>
             <button id="menu-open" class="fas fa-bars"></button>
             
         </nav>
     </header>
+    
+<script>
+
+
+
+ document.getElementById('login').style.display="none";
+ 
+ document.getElementById('logout').style.display="block";
+
+</script>
     <div class="container">
         <section id="review-section">
             <!-- Overall Rating Section -->

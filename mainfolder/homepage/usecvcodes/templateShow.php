@@ -1,3 +1,16 @@
+<?php
+session_start();
+if (!isset($_SESSION['loggedin'])) {
+    echo '<script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelectorAll(".loggedin-template").forEach(function(card) {
+                    card.style.display = "none";
+                });
+            });
+          </script>';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,19 +40,19 @@
             <p>A visually striking design that helps you stand out from the crowd.</p>
             <button><a href="template3.html">Use Template</a> </button>
         </div>
-        <div class="template-card">
+        <div class="template-card loggedin-template">
             <img src="template3.png" alt="Template 3">
             <h2>Traditional Template</h2>
             <p>A classic design that focuses on highlighting your professional experience.</p>
             <button><a href="template2.html">Use Template</a></button>
         </div>
-        <div class="template-card">
+        <div class="template-card loggedin-template">
             <img src="template4.png" alt="Template 4">
             <h2>Professional Template</h2>
             <p>Best suited for corporate and business-style resumes.</p>
             <button><a href="template1.html">Use Template</a></button>
         </div>
-        <div class="template-card">
+        <div class="template-card loggedin-template">
             <img src="template5.png" alt="Template 5">
             <h2>Minimalist Template</h2>
             <p>Focuses on clean and minimal layout with emphasis on details.</p>

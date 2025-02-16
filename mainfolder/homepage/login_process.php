@@ -34,6 +34,9 @@ if (isset($_POST['signIn'])) {
         // Set session variables for the logged-in user
         $_SESSION['user_id'] = $row['id']; // Assuming 'id' is the primary key column in the 'users' table
         $_SESSION['username'] = $row['username'];
+        $_SESSION['showalert']=true;
+        $_SESSION['loggedin']=true;
+
         header("Location: homepage.php");
     } else {
         header("Location: login.php?loginError=Invalid username or password");

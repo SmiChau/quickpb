@@ -34,3 +34,26 @@ const highlightMenu = () => {
 // Attach the function to scroll and click events
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
+
+//setting cookie
+function setCookie(name, value) {
+    document.cookie = name + "=" + value + ";path=/"; // Set the cookie
+}
+
+//getting cookie
+function getCookie(name) {
+    const cookies = document.cookie.split('; '); // Split cookies into an array
+    for (let cookie of cookies) {
+        const [key, value] = cookie.split('='); // Split each cookie into key and value
+        if (key === name) {
+            return value; // Return the value if the key matches
+        }
+    }
+    return null; // Return null if the cookie is not found
+}
+
+function logout(){
+    setCookie('activeStatus','off');
+    alert("Loggedout sucessfully");
+    window.location.href = 'http://localhost/quickpb/mainfolder/homepage/homepage.php';
+}

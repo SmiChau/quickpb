@@ -1,5 +1,14 @@
+<script src="homepage.js"></script>
+
 <?php
 session_start();
+if(isset($_SESSION['showalert'])){
+    echo "<script>alert('Loggedin sucessfully');
+      setCookie('activeStatus','on');
+      </script>";
+    unset($_SESSION['showalert']);
+
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,15 +36,28 @@ session_start();
                 <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
                 <li class="nav-item"><a href="#services" class="nav-link">SERVICES</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
-                <li class="nav-item"><a href="#login-header" class="nav-link">LOGIN/SIGNUP</a></li>
-                <li class="nav-item"><a href="review.php" class="nav-links">RATINGS & REVIEWS</a></li>
-                <li class="nav-item"><a href="logout.php" class="nav-links">LOGOUT</a></li>
+                <li class="nav-item" id="login"><a href="#login-header" class="nav-link">LOGIN/SIGNUP</a></li>
+                <li class="nav-item"><a href="review.php" class="nav-link">RATINGS & REVIEWS</a></li>
+                <li class="nav-item" id="logout"><a href="logout.php" class="nav-link">LOGOUT</a></li>
 
             </ul>
             <button id="menu-open" class="fas fa-bars"></button>
             
         </nav>
     </header>
+    <script>
+        let active = getCookie('activeStatus');
+
+        if(active == "on"){
+         document.getElementById('login').style.display="none";
+         
+         document.getElementById('logout').style.display="block";
+        }else{
+            document.getElementById('logout').style.display="none";
+            document.getElementById('login').style.display="block";
+
+        }
+    </script>
 <main>
     <!-- Home Section -->
     <section id="home" class="home-section">

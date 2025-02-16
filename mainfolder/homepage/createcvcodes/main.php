@@ -1,5 +1,9 @@
 <?php
 include('connect.php'); // Include database connection
+session_start();
+if(!isset($_SESSION['loggedin'])){
+    header("Location: http://localhost/quickpb/mainfolder/homepage/login.php");
+}
 
 // Fetch templates from the database
 $query = "SELECT * FROM templates";
