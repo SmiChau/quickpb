@@ -1,0 +1,25 @@
+Array
+(
+    [0] => Array
+        (
+            [degree] => +2 Science
+            [school] => Capitol Hill Collegej
+            [city] => Kathmandu
+            [start_date] => 2025-02-19
+            [graduation_date] => 2025-02-20
+            [description] => Completed +2 in Science with a focus on Mathematics and Computer Science.
+
+        )
+
+    [1] => Array
+        (
+            [degree] => BCA
+            [school] => Advanced Collegenjjk
+            [city] => Kathmandu
+            [start_date] => 2025-02-11
+            [graduation_date] => 2025-02-11
+            [description] => Pursuing BCA with a focus on programming, database and data analysis.
+
+        )
+
+)

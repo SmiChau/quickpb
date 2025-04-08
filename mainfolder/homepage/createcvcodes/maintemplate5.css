@@ -662,9 +662,9 @@
     display: flex;
     border: #555;
     justify-content: flex-end;
-    gap: 3px;
+    gap: 2px;
      display: flex;/* Align level dots in a row */
-     flex:1.75;/* Adjust to fit content dynamically */
+     flex:2;/* Adjust to fit content dynamically */
     justify-content: flex-start; /* Align level selector closer to the skill name */
 }
 
@@ -927,7 +927,7 @@
     gap: 2px;
     padding-left: 20px;
     top: 865px;
-    left: 55px;
+    left: 65px;
     position: absolute;
     margin-top: 10px;
     font-weight: bold;

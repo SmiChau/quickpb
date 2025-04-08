@@ -1,0 +1,1005 @@
+
+/* Scoped styles for Template 6 */
+.template-data .template6 {
+    position: absolute;
+    text-align: left;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+#template-preview.template6 {
+    position: relative;
+    width: 100%; /* Adjust width to fit your layout */
+    max-width: 800px; /* Max width of the template */
+    height: auto; /* Make the height dynamic */
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+}
+/* Profile Image */
+#template-preview.template6 #photo-preview {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    background-image: url('photo.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 95.7px;
+    left: 76px;
+}
+
+/* Name and Designation */
+#template-preview.template6 #name-preview {
+    visibility: hidden;
+    display: none;
+}
+#template-preview.template6 #lastname-preview {
+    visibility: hidden;
+    display: none;
+}
+
+#template-preview.template6 #fullname-preview {
+    position: absolute;
+    top: 100px; /* Adjust based on your template layout */
+    left: 340px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family:sans-serif;
+    color: #5e787d;
+    width: 370px; /* Keep text inside the container */
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Handles long names */
+}
+
+#template-preview.template6 #designation-preview {
+   
+    position: absolute;
+    top: 173px;
+    left: 415px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Contact and Address Section */
+#template-preview.template6 #contactDisplay{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 270px;
+    left: 52px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5e787d;
+    border-bottom: 2px solid #5e787d; /* Thickness and color of the "underline" */
+    padding-bottom: 1px; /* Adjust spacing below the text */
+    line-height: 1.5;
+    width: 190px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+#template-preview.template6 #icon1{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 317px;
+    left: 52px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+#template-preview.template6 #phone-preview {
+    position: absolute;
+    margin-top: 10px;
+    top: 315px;
+    left: 70px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#template-preview.template6 #icon2{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 337.5px;
+    left: 52px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+#template-preview.template6 #email-preview{
+    position: absolute;
+    margin-top: 10px;
+    top: 335px;
+    left: 70px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#template-preview.template6 #icon3{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 362px;
+    left: 52px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+#template-preview.template6 #address-preview{
+    position: absolute;
+    margin-top: 10px;
+    top: 360px;
+    left: 70px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Summary */
+
+#template-preview.template6 #aboutme{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 195px;
+    left: 280px;
+    font-size: 22px;
+    font-weight: bold;
+    color:#5e787d;
+    line-height: 1.5;
+    width: 450px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 2px solid #5e787d; /* Thickness and color of the "underline" */
+    padding-bottom: 1px; /* Adjust spacing below the text */
+   
+    
+}
+#template-preview.template6 #summary-preview {
+    position: absolute;
+    top: 248px; /* Adjust based on the template layout */
+    left: 280px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    width: 450px; /* Ensure it fits inside the template */
+    height: 120px; /* Limit the height for the summary box */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." for long text */
+    word-wrap: break-word; /* Break text into multiple lines */
+    text-align: justify;
+}
+/* Education section */
+#template-preview.template6 #education-header{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 400px;
+    left: 52px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5e787d;
+    line-height: 1.5;
+    width: 190px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 2px solid #5e787d; /* Thickness and color of the "underline" */
+    padding-bottom: 1px; /* Adjust spacing below the text */
+   
+}
+
+#template-preview.template6 #degree-preview{
+    position: absolute;
+    margin-top: 10px;
+    top: 440px;
+    left: 52px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 190px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+#template-preview.template6 #school-preview{
+    position: absolute;
+    margin-top: 10px;
+    top: 465px;
+    left: 52px;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.5;
+    width: 220px; /* Ensure it fits inside the template */
+    height: 120px; /* Limit the height for the summary box */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." for long text */
+    word-wrap: break-word; /* Break text into multiple lines */
+    text-align: justify;
+}
+#template-preview.template6 #education-city-preview{
+    position: absolute;
+    margin-top: 10px;
+    top: 482px;
+    left: 52px;
+    font-size: 12px;
+    color: #555;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#template-preview.template6 #education-dates-preview{
+    position: absolute;
+    margin-top: 10px;
+    top: 496px;
+    left: 52px;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.5;
+    width: 230px; /* Ensure it fits inside the template */
+    height: 120px; /* Limit the height for the summary box */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." for long text */
+    word-wrap: break-word; /* Break text into multiple lines */
+    text-align: justify;
+}
+#template-preview.template6 #education-description-preview {
+    position: absolute;
+    top: 527px; /* Adjust based on the template layout */
+    left: 52px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    width: 190px; /* Ensure it fits inside the template */
+    height: 80px; /* Limit the height for the summary box */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." for long text */
+    word-wrap: break-word; /* Break text into multiple lines */
+    text-align: justify;
+}
+
+
+#template-preview.template6 .degree-preview {
+    position: absolute;
+    margin-top: 10px;
+    top: 588px;
+    left: 52px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#template-preview.template6 .school-preview {
+    position: absolute;
+    margin-top: 10px;
+    top: 610px;
+    left: 52px;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.5;
+    width: 220px;
+    height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+#template-preview.template6 .city-preview {
+    position: absolute;
+    margin-top: 10px;
+    top: 627px;
+    left: 52px;
+    font-size: 12px;
+    color: #555;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#template-preview.template6 .dates-preview {
+    position: absolute;
+    margin-top: 10px;
+    top: 642px;
+    left: 52px;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.5;
+    width: 230px;
+    height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+#template-preview.template6 .description-preview {
+    position: absolute;
+    top: 672px;
+    left: 52px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    width: 190px;
+    height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+/* Skill section */
+
+
+/* Sidebar Three - Skill Preview Section */
+#template-preview.template6 #skills-header {
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 625px;
+    left: 280px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5e787d;
+    line-height: 1.5;
+    width: 450px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 2px solid #5e787d; /* Thickness and color of the "underline" */
+    padding-bottom: 1px; /* Adjust spacing below the text */
+   
+}
+
+/* Sidebar Three - Skills Preview Section */
+#template-preview.template6 #skills-list {
+    margin-top: 10px;
+}
+
+/* Individual Skill Entry in Preview */
+#template-preview.template6 .skill-entry-preview {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+    margin-bottom: 10px;
+}
+
+/* Skill Name Styling */
+#template-preview.template6 .skill-name-preview {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 48%; /* Adjust to fit alongside level */
+    text-align: left;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+    margin-right: 10px; /* Add a smaller space between name and level selector */
+    flex: 0.95; /* Adjust to fit content dynamically */
+}
+
+/* Skill Level Styling */
+#template-preview.template6 .skill-level-preview {
+    padding: 10px;
+    font-size: 13px;
+     /* Blue color for levels */
+    font-style: italic;
+    text-align: right;
+    width: 48%; /* Adjust to fit alongside name */
+    display: flex;
+    border: #555;
+    justify-content: flex-end;
+    gap: 5px;
+     display: flex;/* Align level dots in a row */
+     flex:0;/* Adjust to fit content dynamically */
+    justify-content: flex-start; /* Align level selector closer to the skill name */
+}
+
+/* Positioning for the First Skill Preview */
+#template-preview.template6 .skill-entry-preview:nth-child(1) {
+    top: 660px;
+    left: 272px; /* Adjusted position */
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 360px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Adjusted Positions for Subsequent Skills */
+#template-preview.template6 .skill-entry-preview:nth-child(2) {
+    top: 685px;
+    left: 272px; /* Adjusted position */
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 360px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#template-preview.template6 .skill-entry-preview:nth-child(3) {
+    top: 710px;
+    left: 272px; /* Adjusted position */
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 360px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#template-preview.template6 .skill-entry-preview:nth-child(4) {
+    top: 735px;
+    left: 272px; /* Adjusted position */
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 360px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Level Indicator Styling for Selected Levels */
+#template-preview.template6 .skill-level-preview .level {
+    margin-top: 5px;
+    width: 15px;
+    height: 12px;
+    border-radius:25%;
+    border: 1px solid #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Highlight Selected Levels */
+#template-preview.template6 .skill-level-preview .level.selected {
+    background-color: #58afbe;
+    border-color: #2980b9;
+}
+
+
+/* language section */
+/* Sidebarthree - Languages Section */
+#template-preview.template6 #languages-header {
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 785px;
+    left: 280px;
+    font-size: 22px;
+    font-weight: bold;
+    color:#5e787d;
+    line-height: 1.5;
+    width: 450px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 2px solid #5e787d; /* Thickness and color of the "underline" */
+    padding-bottom: 1px; /* Adjust spacing below the text */
+   
+}
+/* Sidebar Three - Languages Preview Section */
+#template-preview.template6 #languages-list {
+    margin-top: 10px;
+}
+
+/* Individual Language Entry in Preview */
+#template-preview.template6 .language-entry-preview {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+/* Language Name Styling */
+#template-preview.template6 .language-name-preview {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 48%; /* Adjust to fit alongside level */
+    text-align: left;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+    margin-right: 10px; /* Add a smaller space between name and level selector */
+    flex: 4.5; /* Adjust to fit content dynamically */
+ 
+}
+
+/* Language Level Styling */
+#template-preview.template6 .language-level-preview {
+    padding: 10px;
+    font-size: 13px;
+    color: #3498db; /* Blue color for levels */
+    font-style: italic;
+    margin-bottom: 15px;
+    text-align: right;
+    width: 48%; /* Adjust to fit alongside name */
+    display: flex;
+    border: #fff;
+    justify-content: flex-end;
+    gap: 5px;
+    display: flex; /* Align level dots in a row */
+     /* Decrease the gap between individual level dots */
+    flex: 1.9; /* Adjust to fit content dynamically */
+    justify-content: flex-start; /* Align level selector closer to the language name */
+}
+
+/* Positioning for the First Language Preview */
+#template-preview.template6 .language-entry-preview:nth-child(1) {
+    top: 820px;
+    left: 272px; /* Adjusted position */
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    width: 360px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Adjusted Positions for Subsequent Languages */
+#template-preview.template6 .language-entry-preview:nth-child(2) {
+    top: 845px;
+    left: 272px; /* Adjusted position */
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 360px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#template-preview.template6 .language-entry-preview:nth-child(3) {
+    top: 870px;
+    left: 272px; /* Adjusted position */
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 360px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#template-preview.template6 .language-entry-preview:nth-child(4) {
+    top: 895px;
+    left: 272px; /* Adjusted position */
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 360px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Level Indicator Styling for Selected Levels */
+#template-preview.template6 .language-level-preview .level {
+    margin-top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius:50%;
+    border: 1px solid #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Highlight Selected Levels */
+#template-preview.template6 .language-level-preview .level.selected {
+    background-color: #9a839f;
+    border-color: #2980b9;
+}
+
+/* experience section */
+#template-preview.template6 #experience-header{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 295px;
+    left: 280px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5e787d;
+    line-height: 1.5;
+    width: 450px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 2px solid #5e787d; /* Thickness and color of the "underline" */
+    padding-bottom: 1px; /* Adjust spacing below the text */
+   
+}
+#template-preview.template6 #job-title-preview {
+    position: absolute;
+    margin-top: 10px;
+    top: 335px;
+    left: 280px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#template-preview.template6 #company-preview{
+    position: absolute;
+    margin-top: 10px;
+    top: 357px;
+    left: 280px;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.5;
+    width: 220px; /* Ensure it fits inside the template */
+    height: 120px; /* Limit the height for the summary box */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." for long text */
+    word-wrap: break-word; /* Break text into multiple lines */
+    text-align: justify;
+}
+#template-preview.template6 #experience-city-preview{
+    position: absolute;
+    margin-top: 10px;
+    top: 375px;
+    left: 280px;
+    font-size: 12px;
+    color: #555;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#template-preview.template6 #experience-dates-preview{
+    position: absolute;
+    margin-top: 10px;
+    top: 373.5px;
+    left: 588px;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.5;
+    width: 230px; /* Ensure it fits inside the template */
+    height: 120px; /* Limit the height for the summary box */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." for long text */
+    word-wrap: break-word; /* Break text into multiple lines */
+    text-align: justify;
+}
+#template-preview.template6 #experience-description-preview {
+    position: absolute;
+    top: 405px; /* Adjust based on the template layout */
+    left: 280px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    width: 450px; /* Ensure it fits inside the template */
+    height: 80px; /* Limit the height for the summary box */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." for long text */
+    word-wrap: break-word; /* Break text into multiple lines */
+    text-align: justify;
+}
+/* if another experience is added */
+#template-preview.template6 .job-title-previews {
+    position: absolute;
+    margin-top: 10px;
+    top: 465px;
+    left: 280px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#template-preview.template6 .company-previews{
+    position: absolute;
+    margin-top: 10px;
+    top: 488px;
+    left: 280px;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.5;
+    width: 220px; /* Ensure it fits inside the template */
+    height: 120px; /* Limit the height for the summary box */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." for long text */
+    word-wrap: break-word; /* Break text into multiple lines */
+    text-align: justify;
+}
+#template-preview.template6 .city-previews{
+    position: absolute;
+    margin-top: 10px;
+    top: 508px;
+    left: 280px;
+    font-size: 12px;
+    color: #555;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#template-preview.template6 .dates-previews{
+    position: absolute;
+    margin-top: 10px;
+    top: 506.5px;
+    left: 588px;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.5;
+    width: 230px; /* Ensure it fits inside the template */
+    height: 120px; /* Limit the height for the summary box */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." for long text */
+    word-wrap: break-word; /* Break text into multiple lines */
+    text-align: justify;
+}
+#template-preview.template6 .description-previews {
+    position: absolute;
+    top: 540px; /* Adjust based on the template layout */
+    left: 280px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    width: 450px; /* Ensure it fits inside the template */
+    height: 80px; /* Limit the height for the summary box */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." for long text */
+    word-wrap: break-word; /* Break text into multiple lines */
+    text-align: justify;
+}
+/* acievement section */
+
+#template-preview.template6 #achievement-header{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 475px;
+    left: 280px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5e787d;
+    line-height: 1.5;
+    width: 450px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 2px solid #5e787d; /* Thickness and color of the "underline" */
+    padding-bottom: 1px; /* Adjust spacing below the text */
+   
+    
+}
+#template-preview.template6 #achievement-title-preview {
+   
+    top: 518px;
+    left: 280px;
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#template-preview.template6 #achievement-description-preview {
+    position: absolute;
+    top: 555px; /* Adjust based on the template layout */
+    left: 280px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    width: 450px; /* Ensure it fits inside the template */
+    height: 80px; /* Limit the height for the summary box */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." for long text */
+    word-wrap: break-word; /* Break text into multiple lines */
+    text-align: justify;
+}
+
+
+/* Reference-section */
+#template-preview.template6 #references-header {
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    top: 740px;
+    left: 52px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5e787d;
+    line-height: 1.5;
+    width: 190px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 2px solid #5e787d; /* Thickness and color of the "underline" */
+    padding-bottom: 1px; /* Adjust spacing below the text */
+   
+}
+
+
+/* Reference Entries Preview */
+#template-preview.template6 #references-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-left: 20px;
+    top: 782px;
+    left: 28px;
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+/* Individual Reference Entry */
+#template-preview.template6 .reference-entry-preview {
+    padding: 5px; 
+    border-radius: 5px;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Reference Name Styling */
+#template-preview.template6 .reference-entry-preview strong {
+    font-size: 15px;
+    color: #555;
+}
+
+/* Company / Designation */
+#template-preview.template6 .reference-entry-preview div:nth-child(2) {
+    font-size: 15px;
+    color: #555;
+    font-style: italic;
+}
+
+/* Phone and Email */
+#template-preview.template6 .reference-entry-preview div:nth-child(3) {
+    font-size: 15px;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+    
+
+/* Reference Row Styles (When editing) */
+#template-preview.template6 #reference-container .reference-row {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#template-preview.template6 #reference-container .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#template-preview.template6 #reference-container .form-group label {
+    font-size: 14px;
+    color: #555;
+}
+
+#template-preview.template6 #reference-container .form-group input {
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+

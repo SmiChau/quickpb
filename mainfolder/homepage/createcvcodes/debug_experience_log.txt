@@ -1,0 +1,19 @@
+Array
+(
+    [experience] => Array
+        (
+            [0] => Array
+                (
+                    [job_title] => Data Analyst
+                    [employer] => Google
+                    [location] => Kathmandu, Nepal
+                    [start_date] => 2025-02-27
+                    [end_date] => 2025-02-19
+                    [description] => Worked as a Data Analyst at Microsoft, leveraging data visualization, statistical analysis, and reporting to drive insights and support decision-making.
+
+
+                )
+
+        )
+
+)

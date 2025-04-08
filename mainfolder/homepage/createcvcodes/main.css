@@ -272,7 +272,22 @@ nav img {
 .add-education-btn:hover {
     background-color: #6c4f7c;
 }
+.save-education-btn{
+    font-size: 14px;
+    color: #fff;
+    background-color: #3E4071;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 
+}
+
+.save-education-btn:hover{
+    background-color: #6c4f7c;
+
+}
 .education-entry:last-of-type {
     margin-bottom: 0;
 }
@@ -386,6 +401,22 @@ nav img {
 .delete-experience-btn:hover {
     background-color: #661209;
 }
+.save-experience-btn{
+    font-size: 14px;
+    color: #fff;
+    background-color: #3E4071;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.save-experience-btn:hover{
+    background-color: #6c4f7c;
+
+}
 
 
 /* Skill Section Styles */
@@ -469,6 +500,24 @@ nav img {
     background-color: #6c4f7c;
 }
 
+
+#save-skill-btn{
+    margin-top: 10px;
+    font: 20px;
+    background-color: #3E4071;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+#save-skill-btn:hover{
+    background-color: #6c4f7c;
+
+}
 /* Achievements Section */
 #achievements-section h3{
     padding: 20px;
@@ -543,8 +592,22 @@ nav img {
 #add-achievement-btn:hover {
     background-color: #6c4f7c;
 }
+#save-achievement{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font: 20px;
+    background-color: #3E4071;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 
-
+}
+#save-achievement:hover{
+    background-color: #6c4f7c;
+}
 /* language section */
 /* Language Section Styles */
 #language-section h3 {
@@ -627,6 +690,22 @@ nav img {
     background-color: #6c4f7c;
 }
 
+#save-language-btn{
+    margin-top: 10px;
+    font: 20px;
+    background-color: #3E4071;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+#save-language-btn:hover{
+    background-color: #6c4f7c;
+
+}
 /* reference-section */
 #reference-section h3 {
     padding: 20px;
@@ -634,7 +713,22 @@ nav img {
     color: #686bb3;
     margin-bottom: 10px;
 }
+#save-reference{
+    margin-top: 10px;
+    font: 20px;
+    background-color: #3E4071;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 
+}
+
+#save-reference:hover{
+    background-color: #6c4f7c;
+}
 
 
 .form-group {
@@ -847,4 +941,30 @@ nav img {
     background-position: center; /* Center the template */
     background-repeat: no-repeat;
     overflow: hidden;
+}
+.level {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.level.selected {
+    background-color: #4CAF50; /* Green for selected levels */
+}
+
+.level-dot {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: #dedddd;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.level-dot.filled {
+    background-color: #597693; /* Gold color for filled levels */
 }

@@ -1,8 +1,9 @@
 <?php
 include('connect.php'); // Include database connection
+
 session_start();
 if(!isset($_SESSION['loggedin'])){
-    header("Location: http://localhost/quickpb/mainfolder/homepage/login.php");
+    header("Location:http://localhost/quickpb/mainfolder/homepage/login.php");
 }
 
 // Fetch templates from the database
@@ -132,42 +133,46 @@ $first_template = $result->fetch_assoc();
     <button type="submit" id="save-btn">Save</button>
 </form>
 </section>
-        <!-- education-section -->
-        <section id="education-section">
-            <h3>Education</h3>
-            <div id="education-entries-container">
-            <div class="education-entry">
-                <label for="degree">Degree</label>
-                <input type="text" id="degree" placeholder="Enter your degree" oninput="displayeducation()">
-        
-                <label for="school">School/Institution</label>
-                <input type="text" id="school" placeholder="Enter school name">
-        
-                <label for="city">City</label>
-                <input type="text" id="education-city-input" placeholder="Enter city name">
+ <!-- Education Section -->
+ <!-- Education Section -->
+<section id="education-section">
+    <h3>Education</h3>
+    <div id="education-entries-container">
+        <!-- First Entry (Uses IDs) -->
+        <div class="education-entry">
+            <label>Degree</label>
+            <input type="text" id="degree" placeholder="Enter your degree" oninput="displayeducation()">
 
-        
-                <div class="date-group">
-                    <div>
-                        <label for="start-date">Start Date</label>
-                        <input type="date" id="start-date">
-                    </div>
-                    <div>
-                        <label for="graduation-date">Graduation Date</label>
-                        <input type="date" id="graduation-date">
-                    </div>
+            <label>School/Institution</label>
+            <input type="text" id="school" placeholder="Enter school name">
+
+            <label>City</label>
+            <input type="text" id="education-city-input" placeholder="Enter city name">
+
+            <div class="date-group">
+                <div>
+                    <label>Start Date</label>
+                    <input type="date" id="start-date">
                 </div>
-        
-                <label for="description">Description</label>
-                <textarea id="description" placeholder="Talk a little bit about your course of study."></textarea>
-                <button class="delete-education-btn" style="display:none;">Delete</button>
+                <div>
+                    <label>Graduation Date</label>
+                    <input type="date" id="graduation-date">
+                </div>
             </div>
+
+            <label>Description</label>
+            <textarea id="description" placeholder="Talk a little bit about your course of study."></textarea>
         </div>
-            <button type="button" class="add-education-btn">+ Add Education</button>
-        </section>
-        
+    </div>
+
+    <!-- Add & Save Buttons -->
+    <button type="button" class="add-education-btn">+ Add Education</button>
+    <button type="button" class="save-education-btn">Save</button>
+</section>
+
              <!-- Work Experience Section -->
-             <section id="experience-section">
+<!-- Work Experience Section -->
+<section id="experience-section">
                 <h3>Work Experience</h3>
                 <div class="experience-entry">
                     <div class="form-group">
@@ -206,8 +211,6 @@ $first_template = $result->fetch_assoc();
                 </div>
                 <button type="button" class="add-experience-btn">+ Add Work Experience</button>
             </section>
-            
-     
    <!-- Achievements Section in Sidebar Two -->
 <section id="achievements-section">
     <h3>Achievements</h3>
@@ -221,6 +224,8 @@ $first_template = $result->fetch_assoc();
         <button class="delete-achievement-btn" style="display:none;">Delete</button>
     </div>
     <button type="button" id="add-achievement-btn">+ Add Achievement</button>
+    <button type="button" id="save-achievement">Save Achievement</button>
+
 </section>
 
     <!-- Skill section -->
@@ -249,6 +254,7 @@ $first_template = $result->fetch_assoc();
             </div>
         </div>
         <button type="button" id="add-skill-btn" onclick="addSkill()">+ Add Skill</button>
+        <button type="button" id="save-skill-btn">save</button>
     </form>
 </section>
 
@@ -280,45 +286,48 @@ $first_template = $result->fetch_assoc();
             </div>
         </div>
         <button type="button" id="add-language-btn" onclick="addLanguage()">+ Add Language</button>
+        <button type="button" id="save-language-btn">Save</button>
     </form>
 </section>
 <!-- reference section -->
-
 <section id="reference-section">
     <h3>Reference</h3>
-    <form>
+    <form id="reference-form">
         <div id="reference-container">
-            <!-- Initial Reference Row -->
             <div class="reference-row">
                 <div class="form-group">
                     <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" class="first-name" placeholder="Enter First Name" oninput="displayreferences()">
+                    <input type="text" id="first-name" name="first_name" placeholder="Enter First Name" oninput="displayreferences()">
                 </div>
                 <div class="form-group">
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" class="last-name" placeholder="Enter Last Name" oninput="updateReferencePreview()">
+                    <input type="text" id="last-name" name="last_name" placeholder="Enter Last Name">
                 </div>
                 <div class="form-group">
                     <label for="company">Company</label>
-                    <input type="text" id="company" class="company" placeholder="Enter Company" oninput="updateReferencePreview()">
+                    <input type="text" id="company" name="company" placeholder="Enter Company">
                 </div>
                 <div class="form-group">
                     <label for="designation">Designation</label>
-                    <input type="text" id="designation" class="designation" placeholder="Enter Designation" oninput="updateReferencePreview()">
+                    <input type="text" id="designation" name="designation" placeholder="Enter Designation">
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" class="phone" placeholder="Enter Phone Number" oninput="updateReferencePreview()">
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number">
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" class="email" placeholder="Enter Email" oninput="updateReferencePreview()">
+                    <input type="email" id="email" name="email" placeholder="Enter Email">
                 </div>
             </div>
         </div>
         <button type="button" id="add-reference-btn" onclick="addReferenceRow()">+ Add References</button>
+        
+        <button type="button" id="save-reference">Save</button>
     </form>
 </section>
+
+
 
 <section id="download-section">
     <h3>Download</h3>
@@ -369,7 +378,9 @@ $first_template = $result->fetch_assoc();
 <div id="summary-preview" class="template-data"></div>
             <!-- education section -->
             <!-- Dynamic Placeholders -->
-    <label id="education-header">Education</label>
+            <label id="education-header">Education</label>
+<!-- Preview Section -->
+<label id="education-header">Education</label>
     <div id="education-list">
         <div class="education-entry-preview template-data">
             <div id="degree-preview" class="education-field"></div>
@@ -381,8 +392,8 @@ $first_template = $result->fetch_assoc();
     </div>
     <!-- work experience section -->
      <!-- Experience Section -->
-<label id="experience-header">Experience</label>
-
+    <!-- Experience Section -->
+<label id="experience-header" style="display: none;">Experience</label>
 
 <!-- Dynamic Preview for Experience -->
 <div id="experience-list">
@@ -394,6 +405,8 @@ $first_template = $result->fetch_assoc();
         <div id="experience-description-preview" class="experience-field"></div>
     </div>
 </div>
+
+
 <!-- Achievements Section in Sidebar Three -->
 <label id="achievement-header">Achievements</label>
 <div id="achievements-list">
@@ -421,10 +434,13 @@ $first_template = $result->fetch_assoc();
         <!-- Preview for added languages -->
     </div>
     <!-- Reference section -->
-    <label id="references-header">References</label>
-    <div id="references-preview">
-        <!-- Dynamically updated reference entries will appear here -->
-    </div>
+    <!-- Preview -->
+<label id="references-header">Reference</label>
+<div id="references-preview">
+    <!-- Dynamically updated reference entries will appear here -->
+</div>
+
+    
     <div id="download-list">
         
     </div>
@@ -506,14 +522,31 @@ $first_template = $result->fetch_assoc();
     <script src="mainabout.js"></script>
     <script src="save_about.js"></script>
     <script src="fetch_about.js"></script>
-    <script src="maineducation.js"></script>
+     <script src="maineducation.js"></script>
+     <script src="fetch_education.js"></script>
+     <script src="save_education.js"></script>
+    
+    
     <script src="mainexperience.js"></script>
+    <script src="save_experience.js"></script>
+    <script src="fetch_experience.js"></script>
+    
    
     <script src="mainskill.js"></script>
+    <script src="save_skill.js"></script>
+    <script src="fetch_skill.js"></script>
     <script src="mainachievement.js"></script>
+    <script src="save_achievement.js"></script>
+    <script src="fetch_achievement.js"></script>
     
     <script src="mainlanguage.js"></script>
+    <script src="save_language.js"></script>
+    <script src="fetch_language.js"></script>
+
     <script src="mainreference.js"></script>
+    <script src="save_reference.js"></script>
+    <script src="fetch_reference.js"></script>
+    
     <script src="maincontent.js"></script>
     <script src="maintemplate.js"></script>
     <script src="template1.js"></script>
